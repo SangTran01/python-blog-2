@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<header>
+	<p>Welcome, {{username}}</p>
+
+	<a href="/blog/register">Register Here</a>
+	<br><br>
+	<a href="/blog/login">Login Here</a>
+</header>
+<h1 class="main-title"><a href="/blog">Main Title</a></h1>
+
+<a href="/blog/form">A new post</a>
+
+<div class="blogs">
+	<!-- {% for post in posts %}
+	<div class="post-title">
+		<h2>{{post.subject}}</h2>
+	</div>
+	<div class="post-content">
+		<p>{{post.content}}</p>
+		<p class="created">{{post.created.strftime("%b %d, %Y")}}</p>
+	</div>
+	{% endfor %} -->
+
+	<h3>{{post.created_by}}</h3>
+	<p>{{post.subject}}</p>
+	<p>{{post.content}}</p>
+	<p>{{post.created.strftime("%b %d, %Y")}}</p>
+
+	{% if username == post.created_by %}
+	<a href="#">Delete</a>
+	{% else %}
+	<p>Nothing</p>
+	{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="form">
+	<h2>New Post</h2>
+
+	<form method="post">
+		<h3 class="error">{{error}}</h3>
+		<h3>Subject</h3>
+		<input type="text" name="subject">
+		<h3>Content</h3>
+		<textarea name="content"></textarea>
+		<button type="submit">Submit</button>
+	</form>
+
+	<a style="margin-top:10px;display:block;" href="/blog">Back to Main page</a>
+</div>
+
+
+
+{% endblock %}

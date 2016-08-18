@@ -1,0 +1,69 @@
+.inputs input{
+			display: block;
+
+}
+
+.error {
+	color:red;
+}
+
+/*
+*Blog Styles
+*/
+
+.container {
+	border:1px solid grey;
+}
+
+.main-title {
+	text-align: center;
+}
+
+footer p {
+	text-align: center;
+}
+
+
+input[type="text"] {
+	display: block;
+}
+
+textarea {
+	display: block;
+	height: 300px;
+	width:400px;
+}
+
+button {
+	display: block;
+	margin-top: 10px;
+}
+
+.form {
+	margin: 10px;
+}
+
+.error {
+	font-size: 25px;
+	color:red;
+}
+
+.blogs {
+	border:1px solid black;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.post-title {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-left: 10px;
+}
+
+.post-content {
+	padding: 10px;
+}
+
+.created {
+	text-align: right;
+}
